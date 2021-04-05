@@ -374,3 +374,126 @@ body {
 .footer__socials-link {
     padding: 0 7px 0 0;
 }
+
+.header__title {
+    height: 148px;
+    background-color: #F8F3F4;
+    display: flex;
+    align-items: center;
+}
+
+.header__title-text {
+    text-transform: uppercase;
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.email-btn {
+    padding: 27px 0 0 0;
+}
+
+.email {
+    width: 322.59px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.sub-button {
+    width: 100px;
+    height: 49px;
+    background-color: #F16D7F;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.registation {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registation__form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-details {
+    padding: 0 0 20.5px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.reg__input {
+    height: 45px;
+}
+
+.form-radio {
+    padding: 31px 0 0 0;
+}
+
+.reg-details-email {
+    padding: 33px 0 0 0;
+}
+
+.join-btn {
+    width: 167px;
+    height: 50px;
+    background-color: #F16D7F;
+    height: 17px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.registation__features {
+    width: 652px;
+}
+
+.registration__features-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 0 22px 0;
+}
+
+.registration__features-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 0 21px 0;
+}
+
+.registration__features-item {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 0 16px 0;
+}

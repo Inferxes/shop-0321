@@ -18,12 +18,14 @@
             <div class="container">
                 <div class="header__items">
                     <div>
-                        <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo" width="44" height="38"></a>
+                        <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="logo" width="44" height="38"></a>
                         <img src="img/search.svg" alt="search" width="26" height="28">
                     </div>
                     <div>
-                        <button class="header__burger-button" type="button"><img src="img/burger.svg" alt="menu" width="32" height="23"></button>
-                        <a class="header__person" href="#"><img src="img/person.svg" alt="account"></a>
+                        <button class="header__burger-button" type="button"><svg  class="burger" width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
+                            </svg></button>
+                        <a class="header__person" href="registration.html"><img src="img/person.svg" alt="account"></a>
                         <a class="header__cart" href="#"><img src="img/cart.svg" alt="cart"></a>
                     </div>
                 </div>
@@ -217,7 +219,11 @@
                 <div class="footer__subscribe">
                     <h2 class="subscribe-title">subscribe</h2>
                     <p class="subscribe-text">for our newletter and promotion</p>
-                    <input type="email" placeholder="Enter Your Email">subscribe
+                    <div class="email-btn">
+                        <label for="email"></label>
+                        <input class="email" id="email" type="email" placeholder="Enter Your Email">
+                        <button class="sub-button" type="submit">Subscribe</button>
+                    </div>
                 </div>
             </div>
         </section>
