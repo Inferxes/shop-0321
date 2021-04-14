@@ -1,0 +1,155 @@
+.footer {
+    &__content {
+        margin: 95.5px 0 0 0;
+        height: 341px;
+        background-color: #222224;
+        display: flex;
+        align-items: center;
+    }
+    &__benefits {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__features {
+        width: 360px;
+        height: 133px;
+        text-align: center;
+    }
+    &__car {
+        padding: 0 0 28px 0;
+    }
+    &__sale {
+        padding: 0 0 19px 0;
+    }
+    &__crown {
+        padding: 0 0 25px 0;
+    }
+    &__pic-title {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: #FBFBFB;
+    }
+    &__pic-text {
+        padding: 16px 0 0 0;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        color: #FBFBFB;
+        opacity: 0.8;
+    }
+    &__content-subscribe {
+        height: 448px;
+        background-image: url("../img/subscribe.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    &__content-subscribe-block {
+        display: flex;
+        justify-content: space-between;
+        height: 230px;
+        align-items: center;
+    }
+    &__quote {
+        width: 360px;
+        height: 225px;
+    }
+    &__quote-img {
+        padding: 0 0 30px 0;
+    }
+    &__quote-text {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    &__subscribe {
+        width: 557px;
+        height: 142px;
+    }
+    &__subscribe-title {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    &__subscribe-text {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    &__bottom {
+        height: 79px;
+        background-color: #222224;
+        display: flex;
+        align-items: center;
+    }
+    &__copy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copy-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FBFBFB;
+    }
+    &__socials {
+        display: flex;
+        &-icon {
+            fill: white;
+            &:hover {
+                fill: $dark-pink-color;
+            }
+        }
+    }
+    &__socials-link {
+        padding: 0 7px 0 0;
+    }
+}
+
+.email-btn {
+    padding: 27px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    width: 322.59px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 0 0 0 22px;
+}
+
+.sub-button {
+    width: 100px;
+    height: 49px;
+    background-color: #F16D7F;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}

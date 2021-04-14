@@ -1,0 +1,135 @@
+.products {
+    &__headline {
+        margin: 97px 0 48px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        color: $subtitle-gray-color;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 360px;
+        height: 581px;
+        background-color: $gray-color;
+        margin: 0 0 30px 0;
+        position: relative;
+    }
+    &__button {
+        margin: 48px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__button-browse {
+        width: 211px;
+        height: 47px;
+        border: 1px solid #FF6A6A;
+        color: #F26376;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        background-color: transparent;
+        &:hover {
+            background-color: $dark-pink-color;
+            color: white;
+        }
+    }
+}
+
+.product {
+    &__item-overlay {
+        padding: 0 0 25px 0;
+        width: 100%;
+        height: 420px;
+    }
+    &__item-overlay::before {
+        content: '';
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        min-height: 420px;
+        background: rgba(61, 57, 57, 0.842);
+    }
+    &__item-wrapper:hover .product__item-overlay::before,
+    &__item-wrapper:hover .product__item-btn {
+        display: block;
+    }
+    &__item-descr {
+        padding: 0 0 0 28px;
+        text-align: left;
+        &:hover .product__item-title {
+            text-decoration: underline;
+        }
+    }
+    &__item-title {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        padding: 0 0 12px 0;
+    }
+    &__item-text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        color: $text-light-gray-color;
+        padding: 0 0 18px 0;
+    }
+    &__item-price {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        color: $dark-pink-color;
+    }
+    &__item-btn {
+        display: none;
+        width: 138px;
+        height: 43px;
+        position: absolute;
+        background-color: transparent;
+        border: 1px solid $white-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        color: $white-color;
+        text-align: center;
+        left: 109px;
+        top: 177px;
+        &::before {
+            content: ' ';
+            display: block;
+            width: 26px;
+            height: 24px;
+            background-image: url(/img/cart-icon.svg);
+            background-repeat: no-repeat;
+            background-size: 26px 24px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

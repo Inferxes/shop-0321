@@ -1,0 +1,139 @@
+.reg__header-title {
+    height: 148px;
+    background-color: #F8F3F4;
+    display: flex;
+    align-items: center;
+}
+
+.reg__header-title-text {
+    text-transform: uppercase;
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.registation {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registation__form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-details {
+    padding: 0 0 20.5px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.reg-details-input {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.reg__input {
+    height: 45px;
+    width: 360px;
+    padding-left: 17px;
+}
+
+.form-radio {
+    padding: 11px 0 0 0;
+}
+
+.reg-details-email {
+    padding: 33px 0 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.reg-details-descr {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $description-color;
+}
+
+.join-btn {
+    width: 167px;
+    height: 50px;
+    margin: 39px 0 96px 0;
+    background-color: #F16D7F;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    position: relative;
+    padding-left: 28px;
+    border: none;
+    &::before {
+        content: ' ';
+        width: 17px;
+        height: 10px;
+        position: absolute;
+        background-image: url(/img/pointer.svg);
+        background-size: 17px 10px;
+        right: 32px;
+        top: 19px;
+    }
+}
+
+.registation__features {
+    width: 652px;
+}
+
+.registration__features-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 0 22px 0;
+}
+
+.registration__features-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 0 21px 0;
+}
+
+.registration__features-item {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 0 16px 40px;
+    position: relative;
+    &::before {
+        content: ' ';
+        position: absolute;
+        width: 20px;
+        height: 16px;
+        background-image: url(/img/check-mark.svg);
+        background-size: 20px 16px;
+        top: 7px;
+        left: 0px;
+    }
+}
