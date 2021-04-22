@@ -1,7 +1,7 @@
 .header {
     &__top {
         background-color: $black-color;
-        // position: relative;
+        position: relative;
     }
     &__navigation {
         display: none;
@@ -9,11 +9,8 @@
         height: 764px;
         position: absolute;
         z-index: 1;
-        right: 0;
+        top: 75px;
         background-color: white;
-    }
-    &__burger-button:hover .header__navigation {
-        display: block;
     }
     &__navigation-item-content:hover .header__sub-title,
     &__sub-navigation-content:hover .header__sub-navigation-link {
@@ -61,7 +58,7 @@
         justify-content: space-between;
         min-height: 75px;
         align-items: center;
-        position: relative;
+        // position: relative;
     }
     &__logo {
         margin: 0 41px 0 0;
@@ -74,17 +71,25 @@
     &__person-item,
     &__cart-item {
         fill: $light-gray-color;
+        cursor: pointer;
     }
     &__burger-button {
         background: transparent;
         border: none;
         margin: 0 34px 0 0;
+        // position: relative;
         &:hover .header__burger-item {
             fill: $dark-pink-color;
+        }
+        &:hover+.header__navigation {
+            display: block;
         }
     }
     &__person {
         margin: 0 34px 0 0;
+        // @include mobile {
+        //     display: none;
+        // }
     }
     &__cart:hover .header__cart-item,
     &__person:hover .header__person-item,
@@ -95,30 +100,73 @@
         display: flex;
         margin: 0 auto;
         max-width: 1600px;
-        margin: 0 0 63px;
+        margin: 0 auto 63px auto;
+        @include mobile {
+            min-height: 363px;
+        }
         // position: relative;
-    }
-    &__content-box {
-        background-color: $pink-color;
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        padding: 0 0 0 92px;
-    }
-    &__content-title {
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 58px;
-        text-transform: uppercase;
-    }
-    &__content-sub-title {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 38px;
-        display: block;
-    }
-    &__content-pink-sub-title {
-        color: $dark-pink-color;
+        &-img {
+            @include mobile {
+                display: none;
+            }
+            width: 50%;
+            height: auto;
+        }
+        &-box {
+            background-color: $pink-color;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 92px;
+            @include tablet {
+                padding: 0 0 0 68px;
+            }
+            @include mobile {
+                padding: 0 0 0 56px;
+            }
+        }
+        &-title {
+            position: relative;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 58px;
+            text-transform: uppercase;
+            @include tablet {
+                @include font(44px, 52px, 900)
+            }
+            @include mobile {
+                @include font(38px, 46px, 900);
+            }
+            &::before {
+                content: '';
+                position: relative;
+                display: block;
+                width: 12px;
+                height: 92px;
+                left: -20px;
+                top: 93px;
+                background-color: $dark-pink-color;
+                @include mobile {
+                    height: 62px;
+                    top: 68px;
+                }
+            }
+        }
+        &-sub-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+            display: block;
+            @include tablet {
+                @include font(24px, 29px, 700)
+            }
+            @include mobile {
+                @include font(20px, 24px, 700)
+            }
+        }
+        &-pink-sub-title {
+            color: $dark-pink-color;
+        }
     }
 }
 
@@ -154,6 +202,23 @@
     background: none;
     top: 8px;
     left: 14px;
-    background-image: url(/img/search.svg);
+    background-image: url(../img/search.svg);
     background-size: 27px 28px;
+}
+
+// @media (max-width: $desktop-width) {
+//     .header {
+//         // padding: 0 16px;
+//     }
+// }
+@media (max-width: $tablet-width) {
+    .header {
+        // padding: 0 16px;
+        &__person {
+            display: none;
+        }
+        &__cart {
+            display: none;
+        }
+    }
 }
