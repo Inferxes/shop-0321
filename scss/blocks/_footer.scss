@@ -5,15 +5,31 @@
         background-color: #222224;
         display: flex;
         align-items: center;
+        @include tablet {
+            height: auto;
+        }
     }
     &__benefits {
         display: flex;
         justify-content: space-around;
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 0 64px 0;
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 0 64px 0;
+        }
     }
     &__features {
         width: 360px;
         height: 133px;
         text-align: center;
+        @include tablet {
+            margin: 0 0 48px 0;
+        }
     }
     &__car {
         padding: 0 0 28px 0;
@@ -48,16 +64,34 @@
         display: flex;
         text-align: center;
         align-items: center;
+        @include tablet {
+            height: auto;
+        }
     }
     &__content-subscribe-block {
         display: flex;
         justify-content: space-between;
         height: 230px;
         align-items: center;
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            // padding: 48px 0 64px 0;
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            // padding: 48px 0 64px 0;
+        }
     }
     &__quote {
         width: 360px;
         height: 225px;
+        @include tablet {
+            margin: 64px 0 48px 0;
+        }
     }
     &__quote-img {
         padding: 0 0 30px 0;
@@ -73,6 +107,9 @@
     &__subscribe {
         width: 557px;
         height: 142px;
+        @include tablet {
+            padding: 0 0 140px 0;
+        }
     }
     &__subscribe-title {
         text-transform: uppercase;
@@ -100,6 +137,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__copy-text {
         font-size: 16px;
@@ -137,6 +178,10 @@
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     padding: 0 0 0 22px;
+    @include mobile {
+        width: 240px;
+        height: 46px;
+    }
 }
 
 .sub-button {
@@ -152,4 +197,8 @@
     letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
+    @include min-mobile {
+        width: 95px;
+        height: 46px;
+    }
 }
